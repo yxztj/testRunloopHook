@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A34061671D55D595000EF191 /* RGMainRunLoopProfiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34061661D55D595000EF191 /* RGMainRunLoopProfiler.swift */; };
 		A3F766AE1D542568008593C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F766AD1D542568008593C3 /* AppDelegate.swift */; };
 		A3F766B01D542568008593C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F766AF1D542568008593C3 /* ViewController.swift */; };
 		A3F766B31D542568008593C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3F766B11D542568008593C3 /* Main.storyboard */; };
 		A3F766B51D542568008593C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F766B41D542568008593C3 /* Assets.xcassets */; };
 		A3F766B81D542568008593C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3F766B61D542568008593C3 /* LaunchScreen.storyboard */; };
+		F100E65372BF15DAC75EA7A5 /* Pods_testRunloopHook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D77B98879934C56CE4E901A /* Pods_testRunloopHook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D77B98879934C56CE4E901A /* Pods_testRunloopHook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testRunloopHook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34061661D55D595000EF191 /* RGMainRunLoopProfiler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGMainRunLoopProfiler.swift; sourceTree = "<group>"; };
 		A3F766AA1D542568008593C3 /* testRunloopHook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testRunloopHook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F766AD1D542568008593C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3F766AF1D542568008593C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		A3F766B41D542568008593C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3F766B71D542568008593C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3F766B91D542568008593C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEDAB9B6798A862CE3ACE34A /* Pods-testRunloopHook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testRunloopHook.release.xcconfig"; path = "Pods/Target Support Files/Pods-testRunloopHook/Pods-testRunloopHook.release.xcconfig"; sourceTree = "<group>"; };
+		B34234DDF86A773E974A512B /* Pods-testRunloopHook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testRunloopHook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testRunloopHook/Pods-testRunloopHook.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F100E65372BF15DAC75EA7A5 /* Pods_testRunloopHook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A0F229E0E549D109ACFDADA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D77B98879934C56CE4E901A /* Pods_testRunloopHook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A3F766A11D542568008593C3 = {
 			isa = PBXGroup;
 			children = (
 				A3F766AC1D542568008593C3 /* testRunloopHook */,
 				A3F766AB1D542568008593C3 /* Products */,
+				E6E14DA03D6488D99D0AF63D /* Pods */,
+				7A0F229E0E549D109ACFDADA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +73,22 @@
 			children = (
 				A3F766AD1D542568008593C3 /* AppDelegate.swift */,
 				A3F766AF1D542568008593C3 /* ViewController.swift */,
+				A34061661D55D595000EF191 /* RGMainRunLoopProfiler.swift */,
 				A3F766B11D542568008593C3 /* Main.storyboard */,
 				A3F766B41D542568008593C3 /* Assets.xcassets */,
 				A3F766B61D542568008593C3 /* LaunchScreen.storyboard */,
 				A3F766B91D542568008593C3 /* Info.plist */,
 			);
 			path = testRunloopHook;
+			sourceTree = "<group>";
+		};
+		E6E14DA03D6488D99D0AF63D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B34234DDF86A773E974A512B /* Pods-testRunloopHook.debug.xcconfig */,
+				AEDAB9B6798A862CE3ACE34A /* Pods-testRunloopHook.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3F766BC1D542568008593C3 /* Build configuration list for PBXNativeTarget "testRunloopHook" */;
 			buildPhases = (
+				D66BE751E88BEC0EF4AF0931 /* [CP] Check Pods Manifest.lock */,
 				A3F766A61D542568008593C3 /* Sources */,
 				A3F766A71D542568008593C3 /* Frameworks */,
 				A3F766A81D542568008593C3 /* Resources */,
+				0F996998A330A53E9C24CA52 /* [CP] Embed Pods Frameworks */,
+				E17020941195734F357AC461 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,11 +160,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F996998A330A53E9C24CA52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testRunloopHook/Pods-testRunloopHook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D66BE751E88BEC0EF4AF0931 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E17020941195734F357AC461 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testRunloopHook/Pods-testRunloopHook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A3F766A61D542568008593C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A34061671D55D595000EF191 /* RGMainRunLoopProfiler.swift in Sources */,
 				A3F766B01D542568008593C3 /* ViewController.swift in Sources */,
 				A3F766AE1D542568008593C3 /* AppDelegate.swift in Sources */,
 			);
@@ -249,6 +328,7 @@
 		};
 		A3F766BD1D542568008593C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B34234DDF86A773E974A512B /* Pods-testRunloopHook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = testRunloopHook/Info.plist;
@@ -260,6 +340,7 @@
 		};
 		A3F766BE1D542568008593C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEDAB9B6798A862CE3ACE34A /* Pods-testRunloopHook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = testRunloopHook/Info.plist;
@@ -288,6 +369,7 @@
 				A3F766BE1D542568008593C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

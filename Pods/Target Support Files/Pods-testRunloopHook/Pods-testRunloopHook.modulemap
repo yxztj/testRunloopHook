@@ -1,0 +1,6 @@
+framework module Pods_testRunloopHook {
+  umbrella header "Pods-testRunloopHook-umbrella.h"
+
+  export *
+  module * { export * }
+}
